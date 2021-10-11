@@ -27,28 +27,31 @@ public class CountVisitServlet extends HttpServlet {
         dir.mkdirs();
         File tmp = new File(dir, "visitCounter.txt");
         tmp.createNewFile();
-        FileWriter fileWriter = new FileWriter(tmp, false);
-        fileWriter.write("Visit amount: " + visitsCounter);
-        fileWriter.flush();
-        fileWriter.close();
-
+        try (FileWriter fileWriter = new FileWriter(tmp, false)) {
+            fileWriter.write("Visit amount: " + visitsCounter);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
         response.setContentType("text/html");
 
         String docType = "<!DOCTYPE html>";
         String title = "Visits Counter Demo";
-        PrintWriter writer = response.getWriter();
-
-        writer.println(docType + "<html>" +
-                "<head>" +
-                "<title>" + title +
-                "</title>" +
-                "</head>" +
-                "<body>" +
-                "<h1>Visits amount: </h1>" +
-                visitsCounter +
-                "</body>" +
-                "</html>");
+        try {
+            PrintWriter writer = response.getWriter();
+            writer.println(docType + "<html>" +
+                    "<head>" +
+                    "<title>" + title +
+                    "</title>" +
+                    "</head>" +
+                    "<body>" +
+                    "<h1>Visits amount: </h1>" +
+                    visitsCounter +
+                    "</body>" +
+                    "</html>");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
