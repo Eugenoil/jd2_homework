@@ -22,7 +22,7 @@ public class FormGreetServlet extends HttpServlet {
             out.println("<html><body><h1>Error: Name field is empty.</h1>");
             out.println("<h1>Please enter the name</h1></body><html>");
         } else if (Objects.equals(phone, "") && Objects.equals(email, "")) {
-            out.println("<html><body><h1>Error: Contact data is absent.</h1>");
+            out.println("<html><body><h1>Error: Contact fields are empty.</h1>");
             out.println("<h1>Please enter the phone and email</h1></body><html>");
         } else {
             out.println("<html><head><title>Greet Servlet</title></head>");
