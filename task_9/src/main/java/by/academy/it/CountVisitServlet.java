@@ -22,7 +22,7 @@ public class CountVisitServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         increaseAmountOfVisits();
 
-        //file will be at source directory of disk
+        //file will be in this filepath of %DISK%:tmp/test/visitCounter.txt
         File dir = new File("tmp/test");
         dir.mkdirs();
         File tmp = new File(dir, "visitCounter.txt");
