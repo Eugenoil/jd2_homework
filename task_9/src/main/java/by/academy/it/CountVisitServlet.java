@@ -1,11 +1,13 @@
 package by.academy.it;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 
+@WebServlet("")
 public class CountVisitServlet extends HttpServlet {
     private volatile int visitsCounter;
 
@@ -23,7 +25,7 @@ public class CountVisitServlet extends HttpServlet {
         increaseAmountOfVisits();
 
         //file will be in this filepath of %DISK%:tmp/test/visitCounter.txt
-        File dir = new File("tmp/test");
+        File dir = new File("tmp/text");
         dir.mkdirs();
         File tmp = new File(dir, "visitCounter.txt");
         tmp.createNewFile();
@@ -35,13 +37,11 @@ public class CountVisitServlet extends HttpServlet {
 
         response.setContentType("text/html");
 
-        String docType = "<!DOCTYPE html>";
-        String title = "Visits Counter Demo";
         try {
             PrintWriter writer = response.getWriter();
-            writer.println(docType + "<html>" +
+            writer.println("<html>" +
                     "<head>" +
-                    "<title>" + title +
+                    "<title>" + "Count Visit" +
                     "</title>" +
                     "</head>" +
                     "<body>" +
