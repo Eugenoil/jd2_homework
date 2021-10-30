@@ -1,5 +1,8 @@
-package by.academy.it.data;
+package by.academy.it.ui;
 
+import by.academy.it.data.ExpensesDao;
+import by.academy.it.data.ReceiversDao;
+import by.academy.it.data.SubQuery;
 import by.academy.it.dto.Expense;
 import by.academy.it.dto.Receiver;
 import by.academy.it.input.ExpenseInput;
@@ -20,7 +23,7 @@ public class Menu {
         int innerCh;
 
         while (ch != 11) {
-            System.out.println("Main Menu for Student Data Entry");
+            System.out.println("Main Menu for list_expenses database");
             System.out.println("1. Show table Expenses");
             System.out.println("2. Show table Receivers");
             System.out.println("3. Show table Expenses with receivers names");
