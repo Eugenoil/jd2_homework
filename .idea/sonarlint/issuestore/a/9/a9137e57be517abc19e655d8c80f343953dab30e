@@ -1,0 +1,14 @@
+
+V
+java:S1854";Remove this useless assignment to local variable "scanner".(ù ƒ‘üÿÿÿÿ
+Z
+java:S2147"DCombine this catch with the one at line 18, which has the same body.(åşáÿ
+Z
+java:S2147"DCombine this catch with the one at line 18, which has the same body.(¯áè
+Z
+java:S2147"DCombine this catch with the one at line 18, which has the same body.(Å¡ß
+_
+java:S2147"DCombine this catch with the one at line 18, which has the same body.(¼¯•¶ùÿÿÿÿ
+G
+java:S1481",Remove this unused "scanner" local variable.(ù ƒ‘üÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ƒİÓı

@@ -1,0 +1,39 @@
+
+l
+java:S3457"Q%n should be used in place of \n to produce the platform-specific line separator.(ÿ¯ÚÉùÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÿ¯ÚÉùÿÿÿÿ
+g
+java:S3457 "Q%n should be used in place of \n to produce the platform-specific line separator.(ãë
+N	java:S106 "9Replace this use of System.out or System.err by a logger.(ãë
+l
+java:S3457:"Q%n should be used in place of \n to produce the platform-specific line separator.(ÿ¯ÚÉùÿÿÿÿ
+S	java:S106:"9Replace this use of System.out or System.err by a logger.(ÿ¯ÚÉùÿÿÿÿ
+g
+java:S3457<"Q%n should be used in place of \n to produce the platform-specific line separator.(ãë
+N	java:S106<"9Replace this use of System.out or System.err by a logger.(ãë
+l
+java:S3457V"Q%n should be used in place of \n to produce the platform-specific line separator.(ÿ¯ÚÉùÿÿÿÿ
+S	java:S106V"9Replace this use of System.out or System.err by a logger.(ÿ¯ÚÉùÿÿÿÿ
+g
+java:S3457X"Q%n should be used in place of \n to produce the platform-specific line separator.(ãë
+N	java:S106X"9Replace this use of System.out or System.err by a logger.(ãë
+g
+java:S3457q"Q%n should be used in place of \n to produce the platform-specific line separator.(Û¢‰ª
+N	java:S106q"9Replace this use of System.out or System.err by a logger.(Û¢‰ª
+g
+java:S3457v"Q%n should be used in place of \n to produce the platform-specific line separator.(ãë
+N	java:S106v"9Replace this use of System.out or System.err by a logger.(ãë
+`
+java:S1192!"JDefine a constant instead of duplicating this literal "%s - %f 
+" 3 times.(‹ ‘
+e
+java:S1192"JDefine a constant instead of duplicating this literal "%s - %s 
+" 3 times.(ÿ¯ÚÉùÿÿÿÿ
+b
+java:S20952"GUse try-with-resources or close this "Statement" in a "finally" clause.(é°Áµşÿÿÿÿ
+b
+java:S2095N"GUse try-with-resources or close this "Statement" in a "finally" clause.(é°Áµşÿÿÿÿ
+b
+java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(é°Áµşÿÿÿÿ
+b
+java:S2095j"GUse try-with-resources or close this "Statement" in a "finally" clause.(é°Áµşÿÿÿÿ
