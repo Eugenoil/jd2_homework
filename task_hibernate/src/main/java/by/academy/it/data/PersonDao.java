@@ -86,6 +86,13 @@ public class PersonDao {
             tr.commit();
         }
         session.close();
+        //This method affected by triggers on database that set column 'created' with current time when
+        //insert new object into database.
+        //Body of trigger:
+        //CREATE TRIGGER created_at BEFORE INSERT ON `T_PERSON` FOR EACH ROW
+        //BEGIN
+        //SET NEW.created = now();
+        //END
     }
 
     public void createAndDelete(Person person) {
