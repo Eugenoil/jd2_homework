@@ -34,8 +34,12 @@ public class Menu {
                 while (innerCh != 2) {
                     Person person = new Person();
                     PersonInput.enterPersonInfo(person);
-                    personDao.savePerson(person);
-                    System.out.println(person);
+                    if (personDao.saveAndDelete(person)) {
+                        System.out.println("Person saved successfully");
+                        System.out.println(person);
+                    } else {
+                        System.out.println("Save error");
+                    }
                     System.out.println("\n1.Continue");
                     System.out.println("2.Exit to menu");
                     System.out.print("Enter your choice : ");
@@ -44,7 +48,7 @@ public class Menu {
             } else if (ch == 2) {
                 System.out.println("Please enter ID of what you want to delete : ");
                 int id = sc.nextInt();
-                if (personDao.deletePerson(id)) {
+                if (personDao.saveAndDelete(id)) {
                     System.out.println("Entry was deleted successfully");
                 } else {
                     System.out.println("Error occured");

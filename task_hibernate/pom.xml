@@ -74,7 +74,16 @@
             </plugin>
 
         </plugins>
+
+        <testResources>
+            <testResource>
+                <directory>src/test/resources</directory>
+            </testResource>
+        </testResources>
     </build>
+
+
+
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
