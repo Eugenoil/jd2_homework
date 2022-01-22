@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+ 		http://www.springframework.org/schema/beans
+ 		http://www.springframework.org/schema/beans/spring-beans-3.2.xsd"
+       default-init-method="init" default-destroy-method="destroy">
+
+    <bean id="person" class="by.academy.it.interfaces.Person"
+          factory-method="getInstance">
+        <property name="id" value= '1'/>
+        <property name="age" value= '25'/>
+        <property name="name" value="Alex"/>
+        <property name="surname" value="Ivanov"/>
+        <property name="address" ref="address"/>
+    </bean>
+
+    <bean id="address" class="by.academy.it.pojo.Address"
+          factory-method="getAddress">
+        <property name="id" value="2"/>
+        <property name="street" value="Green"/>
+        <property name="home" value="Home"/>
+    </bean>
+</beans>
